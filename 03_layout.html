@@ -14,6 +14,58 @@
 				color:#fff;
 				padding:20px;
 			}
+			.wrap{
+				width: 1024px;
+				margin: 0 auto;}
+
+			.container{
+				display: flex;
+				height: 300px;
+
+			}
+			.container > .section{
+				background: lightpink;
+				flex:1;
+			}
+
+			.container > .aside{
+				background: #888;
+				width: 200px;
+			}
+
+			.footer{
+				height: 50px;
+				background: #444;
+			}
+
+			@media all and (max-width:1024px){
+				.wrap{
+					width: 640px;
+				}
+				.container > .aside{
+					width: 130px;
+				}
+			}
+
+			@media all and (max-width:640px){
+				.wrap{
+					width: 100%;
+				}
+				.container{
+					display: initial;
+					height: auto;
+				}
+				.container > .section{
+					height: 300px;
+				}
+				.container > .aside{
+					height: 100px;
+					width: auto;
+				}
+			}
+
+
+
 		</style>
 
   </head>
